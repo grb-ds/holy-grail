@@ -1,0 +1,34 @@
+html {
+    background-color: #979;
+    text-align: center;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: dodgerblue;
+    background-color: #4CAFFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: lawngreen}
+
+.button:active {
+    background-color: blueviolet;
+    box-shadow: 0 5px #555;
+    transform: translateY(4px);
+}
+
+.main-center {
+    text-align: center;
+    font-family: Verdana, Arial, Tahoma, Serif;
+}
+

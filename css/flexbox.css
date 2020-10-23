@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+
+
+
+
+/* Make Text in the middle */
+header,
+footer,
+nav,
+main,
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: dodgerblue;
+    padding: 1rem 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    height: 50px;
+    background: dodgerblue;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text-center{
+
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(100vh - 190px - 1rem);
+    margin: .5rem 0;
+}
+
+.container nav,
+.container aside {
+    width: 200px;
+}
+
+.container nav  {
+    background-color: blueviolet;
+    border: 5px dashed #FFFF00;
+}
+
+.container aside {
+    background-color: #00ffff;
+    border: 5px dashed #FFFF00;
+}
+
+.container main {
+    flex: 1;
+    margin: 0 .5rem;
+    background: gold;
+    border: 5px dashed blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+    .container {
+        flex-direction: column;
+        font-size: calc(1em + 1vw);
+        justify-content: space-between;
+    }
+    .container nav,
+    .container main,
+    .container aside {
+        display: flex;
+        flex-basis: max-content;
+        width:auto;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-family: Verdana, Arial, Tahoma, Serif;
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+a:hover {
+
+    background-color: dodgerblue;
+    color : white;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    background-color: #333333;
+
+}
