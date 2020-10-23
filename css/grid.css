@@ -167,6 +167,10 @@ a:hover {
     color : white;
 }
 
+footer {
+    clear: left;
+}
+
 
 
 html {
